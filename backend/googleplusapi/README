@@ -1,0 +1,36 @@
+An unofficial Google Plus API. Right now this consists of the following:
+
+PHP Classes
+-----------
+GoogleUtil - functions for parsing the almost-JSON that Google Plus produces
+PlusPerson - a person entity in Gooogle plus that can be stored to a local mysql DB
+PlusRelationship - a relationship between people in Google plus. This does not contain any circle context
+PlusPost - a post to a user's activty stream
+PostAttachment - encapsulates a media attachment to a post
+
+
+Tests
+-----------
+tests/plususer.php?plusid=xxxxxxxx - demonstrates loading and caching users, as well as traversing the social graph
+tests/plusactivity.php?plusid=xxxxxxx - demonstrates loading and caching public posts from a user's activity stream
+
+
+API
+-----------
+api/getplusperson.php?plusid=xxx - JSON(P) API for retrieving profile data for a person.
+api/getplusposts.php?plusid=xxx - JSON(P) API for retrieving post activty for a person.
+
+
+Installation
+------------
+1. Copy includes/config.inc.editme to /includes/config.inc
+2. Edit config.inc with your path, url and mysql information
+3. Import the sql tables in the sql/ subdirectory
+
+
+TODO
+-----------
+
+- create getters for the rest of the data fields into the PlusPerson and PlusPosts objects
+- do something interesting with all of this
+

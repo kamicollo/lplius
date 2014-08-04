@@ -1,0 +1,135 @@
+	/* Fixes */
+	div.lplius-widget-container, .lplius-widget-container div, .lplius-widget-container span, .lplius-widget-container a, .lplius-widget-container img, .lplius-widget-container ul {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-family: inherit;
+		font-size: 100%;
+		font-style: inherit;
+		font-weight: inherit;
+		text-decoration: none;
+	}
+	
+	.clearfix:after {
+		visibility: hidden;
+		display: block;
+		content: " ";
+		clear: both;
+		height: 0;
+		font-size: 0;
+	}
+	
+	* html .clearfix {
+		zoom: 1
+	}
+	
+	*:first-child+html .clearfix {
+		zoom: 1
+	}
+	
+	/* General */
+	div.lplius-widget-container {
+		font-family: Arial, sans-serif;
+		border: #D6D6D6 solid 1px;
+		box-shadow: inset 0 0 0 1px #EEEEEE;
+		font-size: 13px;
+	}
+
+	/* Profile */
+	
+	.lplius-widget-container .plus-widget-profile {
+		padding: 9px;
+	}
+	
+	.lplius-widget-container .plus-widget-pic {
+		
+		border: #EEEEEE solid 1px;
+	}
+	
+	.lplius-widget-container .plus-widget-name, .lplius-widget-container .plus-widget.bio {
+		display: block;
+	}
+	
+	.lplius-widget-container .plus-widget-name {
+		display: block;
+		padding: 8px 0;
+		line-height: 12px;
+		text-align: center;
+	}
+	
+	.lplius-widget-container .plus-widget-name a {
+		color: #616161;
+	}
+	
+	.lplius-widget-container .plus-widget-bio {
+		overflow: hidden;
+		line-height: 16px;
+		color: #848484;
+		font-style: italic;
+		font-size: 12px;
+	}
+	
+	.lplius-widget-container .plus-widget-count {
+		margin: 10px 0;
+	}
+	
+	.lplius-widget-container .plus-widget-count span {
+		float: right;
+		line-height: 12px;
+		color: #848484;
+		font-size: 12px;
+	}
+	
+	.lplius-widget-container .plus-widget-count ul {
+		float: left;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.lplius-widget-container .plus-widget-count ul li {
+		float: left;
+		width: 12px;
+		height: 12px;
+		margin-right: 1px;
+		background: #EEEEEE;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+	
+	.lplius-widget-container .plus-widget-count ul .reached {
+		background: #B3B3B3;
+	}
+	
+	.lplius-widget-container .plus-widget-count span {
+		float: right;
+		line-height: 12px;
+		color: #848484;
+		font-size: 12px;
+	}
+		
+	.lplius-widget-container .plus-widget-category {
+		font-size: 11px;
+		font-style: italic;
+		color: #B9B9B9;		
+	}
+	
+	.lplius-widget-container .plus-widget-foot {
+		padding: 8px 9px 5px 9px;
+		border-top: #D6D6D6 solid 1px;
+		background: #EEEEEE;
+	}
+	
+	.lplius-widget-container .plus-widget-lplius {
+		float: left;
+		height: 10px;
+	}
+	
+	.lplius-widget-container .plus-widget-gplius {
+		float: right;
+		height: 15px;
+	}
+	
+	

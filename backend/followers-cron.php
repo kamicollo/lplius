@@ -15,7 +15,7 @@ try {
 			'SELECT googleplus_id, plusperson_id, category, followers 
 			FROM plusperson 
 			WHERE state = 1 AND modified_dt < ?
-			ORDER BY modified_dt ASC LIMIT 100',
+			ORDER BY modified_dt ASC LIMIT 10',
 			array(date('Y-m-d H:i:s', time() - 3600)),
 		 'PlusPersonCore');
 	}
@@ -23,7 +23,7 @@ try {
 		$persons = $db->CreateObjects(
 			'SELECT googleplus_id, plusperson_id, category, followers 
 			FROM plusperson 
-			WHERE state = -1 ORDER BY modified_dt ASC LIMIT 100',
+			WHERE state = -1 ORDER BY modified_dt ASC LIMIT 10',
 			array(),
 		 'PlusPersonCore');
 	}

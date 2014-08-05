@@ -6,7 +6,7 @@ require_once('googleplusapi/lib/GooglePlus/PlusPerson.php');
 require_once('googleplusapi/lib/GooglePlus/PlusPost.php');
 require_once('classes/PlusPersonCore.php');
 require_once('classes/Fetcher.php');
-$settings = @parse_ini_file('settings/settings.ini', true);
+$settings = @parse_ini_file('../settings/settings.ini', true);
 try {
 	$db = new DB('mysql:dbname=' . $settings['mysql']['db'] . ';host=' . $settings['mysql']['host'], $settings['mysql']['username'], $settings['mysql']['password'], array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
 	$Robot = new PlusRobot($db);

@@ -6,8 +6,9 @@ require_once('googleplusapi/lib/GooglePlus/PlusPerson.php');
 require_once('googleplusapi/lib/GooglePlus/PlusPost.php');
 require_once('classes/PlusPersonCore.php');
 require_once('classes/Fetcher.php');
+$settings = @parse_ini_file('settings/settings.ini', true);
 try {
-	$db = new DB('mysql:dbname=aurimas_lplus;host=localhost', 'aurimas_lplus', 'C9VfP0ON', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
+	$db = new DB('mysql:dbname=' . $settings['mysql']['db'] . ';host=' . $settings['mysql']['host'], $settings['mysql']['username'], $settings['mysql']['password'], array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
 	$Robot = new PlusRobot($db);
 	if (!isset($_GET['dead'])) {
 		$persons = $db->CreateObjects(
@@ -46,10 +47,10 @@ try {
 			}					
 		}
 		catch(Exception $e) {		
-			file_put_contents('/home/aurimas/domains/lplius.lt/logs/lpliuslt-logs.txt', $e->__toString(), FILE_APPEND);
+			file_put_contents($settings['general']['log_dir'], $e->__toString(), FILE_APPEND);
 		}
 	}
 }
 catch(Exception $e) {
-		file_put_contents('/home/aurimas/domains/lplius.lt/logs/lpliuslt-logs.txt', $e->__toString(), FILE_APPEND);
+		file_put_contents($settings['general']['log_dir'], $e->__toString(), FILE_APPEND);
 }

@@ -27,14 +27,14 @@ function initiate_lplus_creation() {
 function create_lplus_css() {	
 	if (document.createStyleSheet) {
 		//for IE
-		document.createStyleSheet('http://lplius.lt/valdiklis/style.css?v=2');
+		document.createStyleSheet(website_base_url + 'valdiklis/style.css?v=2');
 	}
 	else {
 		//for others
 		element = document.createElement("link");
 		element.setAttribute("rel", "stylesheet");
 		element.setAttribute("type", "text/css");
-		element.setAttribute("href", "http://lplius.lt/valdiklis/style.css?v=2");
+		element.setAttribute("href", website_base_url + "valdiklis/style.css?v=2");
 		document.getElementsByTagName("head")[0].appendChild(element);
 	}
 }						
@@ -47,7 +47,7 @@ function parse_lplus_anchors(element, i) {
 		
 	var src = "id=" + id + "&width=" + width + '&element=' + i;
 	var script = document.createElement('script');                
-	script.setAttribute('src', 'http://lplius.lt/valdiklis/index.php?' + src);                
+	script.setAttribute('src', website_base_url + 'valdiklis/index.php?' + src);                
 	document.getElementsByTagName('head')[0].appendChild(script);								
 }
 			

@@ -21,17 +21,19 @@
 
 	<meta property=og:title content="Lietuviai+" />
 	<meta property=og:type content="website" />
-	<meta property=og:url content="http://lplius.lt/" />
+	<meta property=og:url content="http://lplius.ernes7a.lt/" />
 	<meta property=og:description content="Atrask įdomiausius ir populiariausius Google+ lietuvius. Pridėk save. Pridėk savo draugus. Nes jei tavęs nėra čia, tavęs nėra visai." />
-	<meta property=og:image content="http://lplius.lt/images/lplius.png" />
+	<meta property=og:image content="http://lplius.ernes7a.lt/images/lplius.png" />
 	<meta property=fb:admins content="833735472,516139298" />
 
 	<script src=js/jquery-1.6.2.min.js></script>
 	<script src=js/jquery.easing.1.3.js></script>
 	<script src=js/jquery-ui-1.8.16.custom.min.js></script>
 	<link rel="stylesheet" href="js/jquery-ui/jquery-ui-1.8.16.custom.css" type="text/css" media="screen" />
-	
-	<script type="text/javascript" src="http://lplius.lt/valdiklis/lplius.min.js"> </script>  	
+        <script>
+        website_base_url = "<?php echo Grid::$baseUrl; ?>";
+        </script>
+	<script type="text/javascript" src="<?php Grid::$baseUrl; ?>valdiklis/lplius.min.js"> </script>  	
 	
 	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />

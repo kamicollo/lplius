@@ -77,10 +77,9 @@ define('DEFAULT_ID', '117118694151742553199');
 	
 		<a class="plus-widget-category" href="<?php echo Grid::buildLink(0, $person->getCategory()); ?>" >#<?php echo $person->getCategory(); ?></a>
 	</div>
-	
 	<div class="clearfix plus-widget-foot">
-		<a href="http://lplius.lt"><img class="plus-widget-lplius" src="http://lplius.lt/valdiklis/lietuviai.png" alt="Lietuviai+"/></a>
-		<a href="http://plus.google.com"><img class="plus-widget-gplius" src="http://lplius.lt/valdiklis/google.png" alt="Google+"/></a>
+		<a href="<?php echo Grid::$baseUrl ?>"><img class="plus-widget-lplius" src="<?php echo Grid::$baseUrl ?>valdiklis/lietuviai.png" alt="Lietuviai+"/></a>
+		<a href="http://plus.google.com"><img class="plus-widget-gplius" src="<?php echo Grid::$baseUrl ?>valdiklis/google.png" alt="Google+"/></a>
 	</div>
 <?php
 

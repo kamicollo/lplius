@@ -75,12 +75,12 @@
 	
 	function generate_js_code(id, width) {
 		var anchor = '<a class="lplius-widget" data-id="'+ id +'" data-width="' + width  +'"></a>';
-		var js = '<script src="http://lplius.lt/valdiklis/lplius.min.js"></scr' + 'ipt>';
+		var js = '<script src="<?php echo Grid::$baseUrl; ?>valdiklis/lplius.min.js"></scr' + 'ipt>';
 		$('#lplius-widget-code').text(anchor + js);
 	}
 	
 	function generate_iframe_code(id, width) {
-		var iframe = '<iframe src="http://lplius.lt/valdiklis/iframe.php?'+ 
+		var iframe = '<iframe src="<?php echo Grid::$baseUrl; ?>valdiklis/iframe.php?'+ 
 			'width=' + width + '&id=' + id + 
 			'"height="' + (width + 150) + 'px" width="' + width + 'px"' + 
 			' scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>';

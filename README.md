@@ -2,7 +2,7 @@
 
 Once upon a time Google launched its social network. The accounts on what happened next may vary, 
 but the truth is that some people used it heavily, even making it the main social network to spend time in.
-As with any social network, status on Google+ is important, and is primarily determined by your follower count.
+As with any social network, status on Google+ is important, and in this case, it is primarily determined by your follower count.
 
 So when the social network started picking up in Lithuania, we wondered - wouldn't it be cool to have a website 
 where one could see the most influential users on Google+? We found how to use an unofficial Google+ API for that and that's
@@ -18,7 +18,7 @@ On the backend site, we would not have lived without [the library for interactin
 
 + You need to provide your database credentials and some other information in settings/settings.ini. A sample settings file is provided under the same folder.
 + To setup the required MySQL tables, run ['install.php'](backend/install.php) script.
-+ The ['followers-cron.php'](backend/followers-cron.php) script is designed to batch update your users' followers counts. Note that it needs to be run with "open_basedir=''" as it uses *CURLOPT_FOLLOWLOCATION* internally.
++ The ['followers-cron.php'](backend/followers-cron.php) script is designed to batch update your users' followers counts. Note that it needs to be run with *"open_basedir=''"* as it uses *CURLOPT_FOLLOWLOCATION* internally.
 
 ## Authors
 **Ernesta Orlovaitė**

@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class that builds on the main Google+ profile entity model, used to work in the frontend.
+ */
+
 class PlusPersonView extends PlusPersonCore {
 
 	public function getSecretClass() {

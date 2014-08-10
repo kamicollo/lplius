@@ -1,5 +1,11 @@
 <?php
-error_reporting(E_ALL);
+
+/**
+ * This script manages updating of follower counts.
+ * By default, last 100 users with oldest update date will be updated in 1 run.
+ */
+
+
 require_once('classes/DB.php');
 require_once('classes/PlusRobot.php');
 require_once('googleplusapi/lib/GooglePlus/PlusPerson.php');
@@ -15,7 +21,7 @@ try {
 			'SELECT googleplus_id, plusperson_id, category, followers 
 			FROM plusperson 
 			WHERE state = 1 AND modified_dt < ?
-			ORDER BY modified_dt ASC LIMIT 10',
+			ORDER BY modified_dt ASC LIMIT 100',
 			array(date('Y-m-d H:i:s', time() - 3600)),
 		 'PlusPersonCore');
 	}

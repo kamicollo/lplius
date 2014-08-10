@@ -21,7 +21,7 @@
 
 	<meta property=og:title content="Lietuviai+" />
 	<meta property=og:type content="website" />
-	<meta property=og:url content="http://lplius.ernes7a.lt/" />
+	<meta property=og:url content="<?php echo Grid::$baseUrl; ?>" />
 	<meta property=og:description content="Atrask įdomiausius ir populiariausius Google+ lietuvius. Pridėk save. Pridėk savo draugus. Nes jei tavęs nėra čia, tavęs nėra visai." />
 	<meta property=og:image content="http://lplius.ernes7a.lt/images/lplius.png" />
 	<meta property=fb:admins content="833735472,516139298" />

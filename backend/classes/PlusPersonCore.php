@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Main Entity model for Google+ profiles
+ */
+
 class PlusPersonCore extends PlusPerson {
 
 	public $plusperson_id = 0;

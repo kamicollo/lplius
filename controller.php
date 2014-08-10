@@ -1,7 +1,6 @@
 <?php
 
 	require_once('backend/classes/DB.php');
-	require_once('backend/classes/PlusView.php');
 	require_once('backend/classes/PlusRobot.php');
 	require_once('backend/classes/NavigationItem.php');
 	require_once('backend/classes/PageItem.php');
@@ -30,8 +29,7 @@
 				$PostMessage = new Exception('+Vartotojas sėkmingai pridėtas.');
 			}
 			catch (Exception $PostMessage) {
-				//echo $PostMessage->getMessage();
-				//echo $PostMessage->getCode();
+				//this should not happen.
 			}
 		}
 

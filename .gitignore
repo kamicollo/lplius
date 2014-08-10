@@ -1,3 +1,4 @@
 seime.lt-backend
-settings
+settings.ini
 log.txt
+zero-count-fix.sql

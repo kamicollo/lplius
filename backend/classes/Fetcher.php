@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Object-oriented cURL wrapper. Created before Guzzle was popular.
+ */
+
 class Fetcher {
 
 	private $options = array();

@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Monstrous pagination and whatnot class. But it works!
+ */
+
 class Grid {
 
 	public $prevPage = false;

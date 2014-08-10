@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class that manages adding new users to the database, updating their follower count and etc.
+ */
+
 class PlusRobot { //The factory
 
 	private static $database;

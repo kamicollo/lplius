@@ -10,6 +10,7 @@ class Grid {
 	public $nextPage = false;
 	public $totalPages = 1;
 	public $currentPage = 1;
+	public $currentCategory = '';
 	private $children = array();
 	private $navItems = array();
 	private $populated = false;
